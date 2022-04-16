@@ -13,6 +13,7 @@ import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -39,9 +40,15 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a href="https://github.com/asif88383">
+            <img src={Github} alt="github" />
+          </a>
+          <a href="https://www.linkedin.com/in/asif88383/">
+            <img src={LinkedIn} alt="linkedin" />
+          </a>
+          <a href="https://www.instagram.com/masiflhr/">
+            <img src={Instagram} alt="instagram" />
+          </a>
         </div>
       </div>
       {/* right image side */}
